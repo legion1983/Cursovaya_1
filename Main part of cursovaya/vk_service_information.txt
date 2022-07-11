@@ -1,0 +1,28 @@
+VK:
+ID приложения	8215841
+
+
+https://oauth.vk.com/authorize?client_id=8215841&scope=65536&response_type=token
+
+https://oauth.vk.com/blank.html#access_token=vk1.a.xEZKDiME4i_7ZsMZ_bUwatA86T-dkfJEIHe2FO00ghuRxEbcXcZmq6_pnYJ7WjYSrhfvEux9dYBv5XvaQOuDrP0yqaxLvpXcSQpDjhMthZucETMNd4spbvHA7c84V89pQ2jRR1Z2OomojGKGReFyz5vsBnNK1gb61DvqalBLjm_aZ-N3yKw4-EBNyGjcBalr&expires_in=0&user_id=634947104
+
+--------------access token + user id--------------
+vk1.a.xEZKDiME4i_7ZsMZ_bUwatA86T-dkfJEIHe2FO00ghuRxEbcXcZmq6_pnYJ7WjYSrhfvEux9dYBv5XvaQOuDrP0yqaxLvpXcSQpDjhMthZucETMNd4spbvHA7c84V89pQ2jRR1Z2OomojGKGReFyz5vsBnNK1gb61DvqalBLjm_aZ-N3yKw4-EBNyGjcBalr&expires_in=0&user_id=634947104
+
+--------------access token--------------
+vk1.a.xEZKDiME4i_7ZsMZ_bUwatA86T-dkfJEIHe2FO00ghuRxEbcXcZmq6_pnYJ7WjYSrhfvEux9dYBv5XvaQOuDrP0yqaxLvpXcSQpDjhMthZucETMNd4spbvHA7c84V89pQ2jRR1Z2OomojGKGReFyz5vsBnNK1gb61DvqalBLjm_aZ-N3yKw4-EBNyGjcBalr&expires_in=0
+
+
+----------------user id-----------------
+user_id=634947104
+
+Формат запросов
+
+Синтаксис запроса
+
+Чтобы обратиться к методу API ВКонтакте, нужно выполнить POST или GET запрос вида:
+
+
+https://api.vk.com/method/METHOD?PARAMS&access_token=TOKEN&v=V
+METHOD (обязательно) — название метода API, к которому вы хотите обратиться.
+

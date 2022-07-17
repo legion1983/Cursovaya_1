@@ -1,10 +1,19 @@
-import json
 import urllib.request
 import requests
 from pprint import pprint
 with open("token.txt", "r") as file_object:
     token = file_object.read().strip()
-# _________делаем запрос к api и вынимаем всю информацию_______
+
+# Чтобы обратиться к методу API ВКонтакте, нужно выполнить POST или GET запрос вида:
+# https://api.vk.com/method/METHOD?PARAMS&access_token=TOKEN&v=V
+# инструкция: https://dev.vk.com/api/api-requests
+# базовая ссылка запроса к API VK = https://api.vk.com/method/METHOD?PARAMS&access_token=TOKEN&v=V
+# METHOD?  возьмем = users.get
+# PARAMS =
+# access_token=TOKEN
+# v=V
+
+# _____________________________
 class VkPhotoes:
     url = "https://api.vk.com/method/"
     def __init__(self, token, version):
@@ -128,9 +137,6 @@ def file_name_creation():
     return final_dict
 file_name_creation()
 
-# ___________________________сохраняем информацию о файле в json формат_____________________
-with open('data.txt', 'w', encoding='utf-8') as f:
-    json.dump(file_name_creation(), f, ensure_ascii=False, indent=4)
 
 # __________Загрузка файлов на локальный диск______________________
 url = link_1 = (file_name_creation()['file_1'][1])
